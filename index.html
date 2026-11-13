@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="description" content="Esqueleto para una web estática en HTML, CSS y JavaScript.">
+  <title>Mi web</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="header container">
+    <a class="brand" href="./" aria-label="Ir al inicio"><span class="brand-mark">◈</span> Mi web</a>
+    <nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#acerca">Acerca de</a></nav>
+    <button id="theme-toggle" class="theme-button" type="button" aria-label="Cambiar tema">☾</button>
+  </header>
+  <main id="inicio" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">HTML · CSS · JavaScript</p>
+      <h1 id="hero-title">Un punto de partida<br><span>para crear algo genial.</span></h1>
+      <p class="lead">Una web estática sencilla, rápida y sin dependencias. Preparada para que la vayamos mejorando paso a paso.</p>
+      <a class="button" href="#acerca">Explorar el proyecto <span aria-hidden="true">→</span></a>
+    </section>
+    <section id="acerca" class="features" aria-labelledby="features-title">
+      <h2 id="features-title">Construida para iterar</h2>
+      <div class="cards">
+        <article class="card"><span class="card-icon" aria-hidden="true">✦</span><h3>Simple</h3><p>Solo archivos estáticos. Sin compilación ni frameworks.</p></article>
+        <article class="card"><span class="card-icon" aria-hidden="true">⌘</span><h3>Modular</h3><p>HTML, CSS y JavaScript en archivos separados.</p></article>
+        <article class="card"><span class="card-icon" aria-hidden="true">☀</span><h3>Adaptable</h3><p>Diseño responsive y selector de tema claro u oscuro.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container"><span>© <span id="year"></span> Mi web</span><span>Hecha para crecer.</span></footer>
+</body>
+</html>
